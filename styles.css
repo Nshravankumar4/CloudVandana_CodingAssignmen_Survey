@@ -1,0 +1,201 @@
+body {
+  font-family: sans-serif;
+  
+  background-image: url('logo.png'); /* Replace 'your-image.jpg' with your image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column; /* Ensure footer stays at the bottom */
+}
+
+form {
+  width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  margin-bottom: 60px; /* Add margin to avoid overlap with the footer */
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+input,
+select {
+  width: 50%;
+  padding: 6px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 45%;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#resetButton {
+  background-color: #FF0000;
+  color: #fff;
+  float: left;
+}
+
+#submitButton {
+  background-color: #008000;
+  color: #fff;
+  float: right;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.gender-wrapper {
+  display: flex;
+  align-items: 10px;
+  margin-left: 100px;
+}
+
+#popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #27b92e;
+  color: #000;
+  padding: 20px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Add these CSS styles to properly align the list items within the ul */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  text-align: left;
+}
+
+ul li strong {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+/* Add this CSS to float radio buttons to the right */
+/* Add this CSS to adjust the alignment of gender radio buttons */
+.gender-wrapper {
+  text-align: right;
+  margin-right: 1px;
+}
+
+/* Footer styles */
+footer {
+  width: 100%;
+  
+  padding: 1px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #617dc7;
+  text-decoration: none;
+}
+
+.social-icons {
+  font-size: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.github:hover {
+  color: #000;
+}
+
+.linkedin:hover {
+  color: #0077B5;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructions {
+    flex: 1;
+    margin-right: 1px;
+    padding: 5px;
+    border: 1px solid #f1eeee;
+    color: #c96b6b;
+}
+
+.Assignment {
+    flex: 1;
+    padding: 5px; /* Increase the padding to create space around the image */
+    border: 1px solid #f1eeee;
+    
+}
+.colo {
+  color: #d80d0d;
+}
+.h2 {
+  color: #7ad80f;
+}

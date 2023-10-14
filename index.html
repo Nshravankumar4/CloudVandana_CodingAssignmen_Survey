@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/country-select-js@3.0.0/countrySelect.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+ 
+<div class="container">
+    <div class="instructions">
+        <h3>Instructions:</h3>
+        <p>Please fill out the following survey form. All fields are required.</p>
+    </div>
+    <div class="Assignment">
+      <div class="colo"><h1>CloudVandana</h1></div>
+      <div class="h2"><h2>Coding Assignment – Associate Software Engineer</h2></div>
+     
+    </div>
+</div>
+
+  
+</div>
+
+  <form id="surveyForm">
+    <h1 class="centered-header">SurveyForm</h1>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required placeholder="Enter your firstName">
+    
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required placeholder="Enter your lastName"><br>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" "><br>
+
+    <label for="country">Country:</label>
+    <select id="country" required>
+      <option value="" disabled selected>Select a Country</option>
+      <option value="China">China</option>
+      <option value="United States">United States</option>
+      <option value="India">India</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Japan">Japan</option>
+      <option value="Russia">Russia</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Germany">Germany</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="France">France</option>
+      <option value="Canada">Canada</option>
+      <option value="South Korea">South Korea</option>
+      <option value="Italy">Italy</option>
+      <option value="Spain">Spain</option>
+      <option value="Australia">Australia</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Netherlands">Netherlands</option>
+      <option value="Turkey">Turkey</option>
+      <option value="Poland">Poland</option>
+    </select><br>
+    
+
+
+    <label>Gender:</label>
+    <div class="gender-wrapper">
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <span>Male</span>
+    </div>
+    <div class="gender-wrapper">
+      <input type="radio" id="female" name="gender" value="Female" required>
+      <span>Female</span>
+    </div>
+    
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" required placeholder="Enter your profession"><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" required placeholder="Enter your email"><br>
+    
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" required placeholder="Enter your mobile Number"><br><br><br>
+    
+    <div class="button-container">
+      <button type="button" id="resetButton">Reset</button>
+      <button type="submit" id="submitButton">Submit</button>
+    </div>
+  </form>
+  
+  <div id="popup" class="hidden">
+    <div id="popup-content">
+      <h2>Survey Results</h2>
+      <div id="results"></div>
+      <p>Thanks for providing! You can now close.</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row text-center">
+      <div class="col-md-6 order-md-2">
+        <ul class="social-icons">
+          <li><a target="_blank" class="github" href="https://github.com/Nshravankumar4"><i class="fab fa-github fa-2x"></i></a></li>
+          <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/nshravankumar4/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <p>Developed by Nunsavath Shravan Kumar</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
